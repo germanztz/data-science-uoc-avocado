@@ -1,4 +1,4 @@
-Para realizar un análisis de datos exploratorio (EDA) del conjunto de datos de precios de aguacate con un equipo de tres personas, aquí tienes una planificación organizada por las tareas más importantes. Esta estructura divide los objetivos del análisis en fases para que cada persona pueda trabajar en actividades paralelas y contribuir de manera efectiva al proyecto.
+Para realizar un análisis de datos exploratorio (EDA) del conjunto de datos de precios de aguacate con un equipo de tres personas. Esta estructura divide los objetivos del análisis en fases para que cada persona pueda trabajar en actividades paralelas y contribuir de manera efectiva al proyecto.
 
 ### Ingrantes del equipo
 
@@ -120,3 +120,63 @@ Para realizar un análisis de datos exploratorio (EDA) del conjunto de datos de 
       - Preparar una presentación final para comunicar los hallazgos de manera clara.
     - **Responsable**: Equipo completo.
 
+---
+
+### Metodología ágil
+
+Para abordar este análisis mediante una metodología ágil, vamos a estructurar el trabajo en iteraciones cortas o "sprints". Cada sprint tendrá una duración de 1 semana, con entregas de valor al final de cada uno para mantener el progreso continuo y asegurar que el equipo se adapta rápidamente a cualquier cambio o mejora que se necesite.
+
+Aquí está el desglose de la metodología ágil aplicada a este proyecto de análisis exploratorio de datos (EDA) en conjunto de tres personas:
+
+
+---
+
+### **Sprint 1 (4 días): Preprocesamiento, Análisis de Series Temporales y Visualización**
+  
+#### **Objetivo**: Limpiar y preparar los datos, explorar tendencias de tiempo y visualizar datos clave.
+
+#### **Actividades**:
+1. **Preprocesamiento de Datos**:
+   - Importación y limpieza de datos: eliminación de valores nulos y conversión de tipos de datos.
+   - Estandarización de columnas y estructura para facilitar análisis.
+
+2. **Análisis de Series Temporales**:
+   - Análisis de estacionalidad por región, precios promedio mensuales y cambios anuales.
+   - Identificación de patrones y tendencias de venta y precio en el tiempo.
+
+3. **Visualización de Datos**:
+   - Gráfico de violín para distribución de volumen por región y boxplot comparativo de precios.
+   - Histograma del volumen total de ventas y gráficos de barras por tipo de bolsa y año.
+
+#### **Entregable**: Conjunto de datos limpios, análisis inicial de series temporales y visualizaciones básicas con hallazgos preliminares.
+
+---
+
+### **Sprint 2 (4 días): Análisis de Elasticidad, Cohortes, Correlación y Regresión**
+  
+#### **Objetivo**: Analizar sensibilidad de precios, comportamiento por cohortes y relaciones entre variables.
+
+#### **Actividades**:
+1. **Análisis de Elasticidad del Precio**:
+   - Cálculo de elasticidad precio-demanda anual y por región.
+   - Gráficos de elasticidad según tamaño de bolsa y tipo de aguacate (orgánico vs. convencional).
+
+2. **Análisis de Cohortes**:
+   - Cohortes basadas en precios promedio trimestrales por región y tipo de bolsa.
+   - Visualización de retención de ventas y evolución de cohortes a lo largo del tiempo.
+
+3. **Análisis de Correlación y Regresión**:
+   - Matriz de correlación entre variables clave.
+   - Modelos de regresión lineal para identificar y predecir relaciones significativas.
+
+#### **Entregable**: Informe final de elasticidad, cohortes y regresión con conclusiones clave y gráficos interpretativos.
+
+---
+
+### **Reunión Final y Documentación**
+  
+- **Objetivo**: Consolidar resultados y generar un informe final.
+- **Actividades**: Integrar hallazgos de ambos sprints, documentación de proceso y recomendaciones.
+- **Herramientas**: Google Docs para el informe, GitHub o Colab para el código, y Google Slides para la presentación final.
+
+Este enfoque compacto en dos sprints permite lograr el análisis completo y entregar resultados significativos en una semana y media. Permitiendo que el equipo trabaje en paralelo, entregue resultados incrementales y adapte el análisis de acuerdo a las necesidades y descubrimientos de cada sprint.
