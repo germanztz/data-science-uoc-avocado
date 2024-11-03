@@ -1,4 +1,4 @@
-Para realizar un análisis de datos exploratorio (EDA) del conjunto de datos de precios de aguacate con un equipo de tres personas. Esta estructura divide los objetivos del análisis en fases para que cada persona pueda trabajar en actividades paralelas y contribuir de manera efectiva al proyecto.
+Análisis de datos exploratorio (EDA) del conjunto de datos de precios de aguacate con un equipo de tres personas. Esta estructura divide los objetivos del análisis en fases para que cada persona pueda trabajar en actividades paralelas y contribuir de manera efectiva al proyecto.
 
 ### Ingrantes del equipo
 
@@ -11,6 +11,10 @@ Para realizar un análisis de datos exploratorio (EDA) del conjunto de datos de 
 ---
 
 ### **Planificación del EDA: Análisis de Datos de Precios de Aguacate**
+
+
+
+![alt text](image-1.png)
 
 1. **Definir Objetivos del Análisis (Reunión Inicial)**
    - **Descripción**: Determinar los objetivos del EDA y los resultados esperados.
@@ -180,3 +184,87 @@ Aquí está el desglose de la metodología ágil aplicada a este proyecto de an�
 - **Herramientas**: Google Docs para el informe, GitHub o Colab para el código, y Google Slides para la presentación final.
 
 Este enfoque compacto en dos sprints permite lograr el análisis completo y entregar resultados significativos en una semana y media. Permitiendo que el equipo trabaje en paralelo, entregue resultados incrementales y adapte el análisis de acuerdo a las necesidades y descubrimientos de cada sprint.
+
+
+### Observaciones sobre los Datos
+
+
+1. Existen datasets solapados que alteran los análisis, Separamos los datos por tipo de `region`
+
+   ![alt text](image.png)
+
+1. El cómputo de `Bags` es coherente, suma coincide con el total (si se trabaja en enteros solo faltan 10)
+
+   ![alt text](image-2.png)
+
+1. Bajada de precio alrededor de febrero, posiblemente debido a picos de venta
+
+   ![alt text](image-3.png)
+
+1. Posible error en `AveragePrice` de tipo `organic` de julio 2015 son incoherentes entre `TotalUS` (1.00) y el resto de datasets `Regional` (1.71) y `local` (1.76)
+
+   ![alt text](image-4.png)
+
+1. se observa un incremento de volumen de tipo `organic`
+
+   ![alt text](image-5.png)
+
+1. Pico de volumen a principios de febrero y mayo [`2018-02-04`, `2017-02-05`, `2016-02-07`, `2017-05-07`, `2016-05-08`, `2015-02-01`]
+
+   ![alt text](image-6.png)
+
+1. se dispara en verano la venta de `XLarge Bags` a partir de 2016
+
+   ![alt text](image-7.png)
+
+1. No se vendieron `XLarge Bags` de tipo `organic` hasta agosto de 2017
+
+   ![alt text](image-8.png)
+
+1. alteraciones en la elasticidad de la demanda por la variación del precio en algunas ciudades
+
+   ![alt text](image-10.png)
+
+1. La elasticidad tiende a 0 a medida que avanza el tiempo, mentras que en 2015 es de -250 en 2018 es de -50
+
+   ![alt text](image-9.png)
+
+1. Existe un consumo orientado a comprar mayor volumen a un precio más bajo, pero tambien hay un consumo de poco volumen a precios medios/altos
+1. hay tres clusters importantes de consumo: 
+   - Volumen alto/precio medio: v(10⁸) $(0.8-1.6): para Small y Large Bags 
+   - Volumen medio: v(10⁶) $(0.8-2.0): para todo tamaño de bolsa 
+   - Volumen bajo/precio alto: v(10⁴) $(1.3-2.0): para `XLarge Bags` 
+
+   ![alt text](image-11.png)
+
+1. existe clara relación opuesta entre el `AveragePrice` y el `Total Volume` que podría indicar que la subida de una condiciona la otra
+
+   ![alt text](image-12.png)
+
+1. mientras que el `AveragePrice` de `organic` se mantiene dos puntos porcentuales por encima del `conventional`, el `Total Volume` se mantiene a dos ordenes de magnitud por debajo
+
+   ![alt text](image-13.png)
+
+1. La tendencia está condicionada por las `Small Bags` (75,9%) y una presencia anegdótica de `XLarge Bags` (1,3%)
+
+   ![alt text](image-14.png)
+
+   ![alt text](image-15.png)
+
+   ![alt text](image-16.png)
+
+1. Alta correlación entre `Total Volume` y (`Small Volume`, `Large Volume`,`XLarge Volume`) lo que podría indicar (erroneamente) que las tres son una segmentación de `Total Volume`
+Total Volume: 15523402593.400002 **NO** es la Suma de Small Volume, Large Volume y XLarge Volume: 11150188799.32 diferencia: 4373213794.080002
+
+   ![alt text](image-17.png)
+
+
+1. La mejor predicción (96,16% +- 0,071) se obtiene filtrando cada localidad usando las 4 columnas de `Volume`
+   - La segunda mejor (93,15% +- 0,074) es usando `TotalUS` y las 4 columnas `Volume`
+
+   ![alt text](image-18.png)
+
+1. Las pruebas realizadas con diferentes sets de datos y filtros no consiguen predecir de manera fiable el precio basandonos en años anteriores
+
+   ![alt text](image-19.png)
+
