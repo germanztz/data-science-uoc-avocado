@@ -55,6 +55,9 @@
      - Calcula el promedio de `AveragePrice` para cada región.
      - Representa gráficamente las tendencias utilizando `plt.plot()` de `matplotlib`.
 
+![image](https://github.com/user-attachments/assets/4a2c5d41-e297-4e99-b5f5-9599c4a4f932)
+
+
 3. **Comparación de Precios Promedio Mensuales:**
    - **Uso de Datos:** Usa las columnas `AveragePrice` y `Date`.
    - **Esperado:** Calcula y compara los precios promedio mensuales.
