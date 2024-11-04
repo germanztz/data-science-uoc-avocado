@@ -55,8 +55,23 @@
      - Calcula el promedio de `AveragePrice` para cada región.
      - Representa gráficamente las tendencias utilizando `plt.plot()` de `matplotlib`.
 
-![image](https://github.com/user-attachments/assets/4a2c5d41-e297-4e99-b5f5-9599c4a4f932)
+![image](https://github.com/user-attachments/assets/05725bf5-7dd3-47b7-bf31-b6c2f0b9586f)
 
+-La caída en los precios durante los meses de Julio y Septiembre del 2015 en wide_region, se atribuye a un error en la codificación de los datos.
+
+-Lo más importante que vemos en la gráfica es que los precios de los aguacates suben y bajan de manera regular cada año. Esto se debe a varias razones, como el clima, la cantidad de aguacates que se producen y la demanda de los consumidores.
+
+
+![image](https://github.com/user-attachments/assets/a6411127-4a1c-4dbb-81ad-9bf6210aeea1)
+
+-Al comparar las estaciones, el invierno y la primavera parecen tener precios promedio ligeramente más bajos y consistentes en comparación con el verano y el otoño, donde los precios tienden a ser más variables y en algunos casos, más altos.
+Esto podría sugerir que la demanda de aguacates aumenta en los meses de verano y otoño, o que hay una menor disponibilidad de productos en esas estaciones, lo cual afecta los precios.
+
+-Si bien los precios en general muestran un comportamiento similar en todas las ciudades, algunas áreas exhiben tendencias más marcadas en ciertos momentos. Por ejemplo:
+Algunas ciudades (como California, que está más cerca de las principales áreas productoras de aguacates) podrían tener precios más estables y bajos debido a la proximidad a la fuente.
+Ciudades en el noreste o áreas más alejadas de las zonas productoras (como Nueva York o Boston) podrían experimentar mayores variaciones debido a los costos adicionales de transporte y logística.
+
+-La estacionalidad en los precios podría estar reflejando patrones de consumo también. Si se sabe que la demanda de aguacates tiende a aumentar en ciertas estaciones (como verano y otoño debido a las ensaladas y recetas de temporada), entonces las fluctuaciones en el precio podrían ser una respuesta directa a esta demanda. Otras causas también son por el clima o eventos.
 
 3. **Comparación de Precios Promedio Mensuales:**
    - **Uso de Datos:** Usa las columnas `AveragePrice` y `Date`.
@@ -70,6 +85,16 @@
    - **Esperado:** Analiza cómo varía el volumen total de ventas a lo largo del tiempo.
      - Agrupa los datos por `Date` y suma el `Total Volume` usando `groupby()`.
      - Visualiza los resultados usando un gráfico de líneas con `plt.plot()` para mostrar la tendencia.
+
+![image](https://github.com/user-attachments/assets/e5f8cd84-05d9-4791-82df-ceb6599c3765)
+
+-La gráfica muestra picos recurrentes en ciertas épocas del año, probablemente debido a eventos de alta demanda como el Super Bowl, cuando el consumo de aguacates aumenta notablemente. Esto sugiere una estacionalidad en la demanda.
+
+-Aunque hay fluctuaciones, se observa una ligera tendencia ascendente en el volumen total de ventas hacia finales de 2017 y principios de 2018, lo que podría estar relacionado con el creciente interés en el aguacate como alimento saludable.
+
+-Existen caídas abruptas en las ventas en algunos periodos, posiblemente causadas por factores externos como problemas en la cadena de suministro o la disponibilidad limitada de aguacates debido a cuestiones climáticas o estacionales.
+
+-La variabilidad constante en el volumen de ventas podría reflejar una demanda sensible a cambios en la oferta y el precio del aguacate, indicando una demanda flexible en función de estos factores.
 
 5. **Análisis de Cambios en Precios Anuales:**
    - **Uso de Datos:** Usa las columnas `AveragePrice` y `year`.
@@ -94,6 +119,16 @@
      - Utiliza `boxplot` de `seaborn` para crear boxplots que comparen `AveragePrice` entre diferentes años.
      - Asegúrate de que cada boxplot represente un año diferente.
      - Incluye etiquetas y títulos descriptivos usando `plt.title()`.
+     - 
+![image](https://github.com/user-attachments/assets/0ac68a5a-8626-4542-a9bb-b6757ed9d796)
+
+-Se observa que desde 2015 a 2017, parece haber una tendencia al alza en el precio promedio de los aguacates, alcanzando su punto más alto en 2017.
+-En 2018, se observa una disminución en el precio promedio, lo cual sugiere que el mercado pudo haberse estabilizado o que hubo una mayor disponibilidad de aguacates.
+
+-El año 2017 muestra una variabilidad mayor en los precios promedio en comparación con los otros años, tanto en la amplitud de la caja como en la cantidad de outliers. Esto indica que 2017 fue un año inestable para el precio de los aguacates.
+En cambio, 2018 muestra una variabilidad menor y menos outliers, sugiriendo que los precios fueron más consistentes en este año.
+
+-La presencia de múltiples valores atípicos en los años 2016 y 2017 podría indicar la influencia de factores externos, como problemas en la cadena de suministro, variaciones climáticas, o un aumento en la demanda que impactaron los precios de forma significativa en esos períodos de tiempo.
 
 3. **Histograma de Volumen Total de Ventas:**
    - **Uso de Datos:** Usa la columna `Total Volume`.
@@ -108,6 +143,14 @@
      - Suma los volúmenes de ventas por tipo de bolsa utilizando `sum()`.
      - Crea un gráfico de barras con `plt.bar()` para mostrar las diferencias en ventas.
      - Asegúrate de incluir etiquetas para cada tipo de bolsa.
+
+![image](https://github.com/user-attachments/assets/2feea2ca-c199-40cc-9203-1810f9a6bf52)
+
+-El total bag y small bag tienen una correlación de 0.99, están relacionados por lo cual si uno tiende a subir o bajar, el otro tomará la misma reacción.
+
+![image](https://github.com/user-attachments/assets/002aed2a-47aa-449b-bfae-6218d366124e)
+
+-
 
 5. **Gráfico de Líneas de Precios Promedios por Año:**
    - **Uso de Datos:** Utiliza las columnas `AveragePrice` y `year`.
