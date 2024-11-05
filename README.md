@@ -235,23 +235,23 @@ Este enfoque compacto en dos sprints permite lograr el análisis completo y entr
    - Volumen medio: v(10⁶) $(0.8-2.0): para todo tamaño de bolsa 
    - Volumen bajo/precio alto: v(10⁴) $(1.3-2.0): para `XLarge Bags` 
 
-   ![alt text](image-11.png)
+   ![alt text](image-20.png)
 
 1. existe clara relación opuesta entre el `AveragePrice` y el `Total Volume` que podría indicar que la subida de una condiciona la otra
 
-   ![alt text](image-12.png)
+   ![alt text](image-11.png)
 
 1. mientras que el `AveragePrice` de `organic` se mantiene dos puntos porcentuales por encima del `conventional`, el `Total Volume` se mantiene a dos ordenes de magnitud por debajo
 
-   ![alt text](image-13.png)
+   ![alt text](image-12.png)
 
 1. La tendencia está condicionada por las `Small Bags` (75,9%) y una presencia anegdótica de `XLarge Bags` (1,3%)
 
    ![alt text](image-14.png)
 
-   ![alt text](image-15.png)
+   ![alt text](image-13.png)
 
-   ![alt text](image-16.png)
+   ![alt text](image-21.png)
 
 1. Alta correlación entre `Total Volume` y (`Small Volume`, `Large Volume`,`XLarge Volume`) lo que podría indicar (erroneamente) que las tres son una segmentación de `Total Volume`
 Total Volume: 15523402593.400002 **NO** es la Suma de Small Volume, Large Volume y XLarge Volume: 11150188799.32 diferencia: 4373213794.080002
@@ -263,7 +263,7 @@ Total Volume: 15523402593.400002 **NO** es la Suma de Small Volume, Large Volume
    - La segunda mejor (93,15% +- 0,074) es usando `TotalUS` y las 4 columnas `Volume`
 
    ![alt text](image-18.png)
-
+   ![alt text](image-15.png)
 1. Las pruebas realizadas con diferentes sets de datos y filtros no consiguen predecir de manera fiable el precio basandonos en años anteriores
 
    ![alt text](image-19.png)
