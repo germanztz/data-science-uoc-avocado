@@ -264,6 +264,17 @@ $$
      - Clasifica los clientes según su volumen de compras.
      - Visualiza las cohortes en gráficos de líneas o barras que muestren el comportamiento de compra a lo largo del tiempo.
 
+![image](https://github.com/user-attachments/assets/e01e58dc-7e33-42ea-bb54-e1ca783d028b)
+
+-Total Bags y Small Bags presentan los volúmenes más altos en cada año. Esto indica una fuerte preferencia del mercado por tamaños de bolsa que incluyan una cantidad moderada de producto (Small Bags) y también el volumen total que representan (Total Bags).
+
+-En Large Bags, aunque su volumen de ventas es considerablemente menor que el de las Small Bags, las Large Bags mantienen una presencia estable. Esto indica una segmentación donde algunos consumidores prefieren opciones de mayor tamaño, aunque en menor proporción.
+
+-En XLarge Bags, el volumen de ventas de esta cohorte es muy bajo en todos los años, lo que indica una demanda muy limitada para las bolsas de gran tamaño.
+
+-Se observa un crecimiento en el promedio de ventas entre 2015 y 2016, especialmente en las Small Bags y Total Bags, lo cual podría indicar un aumento en la demanda general de estos productos. Sin embargo, en 2018 hay una ligera disminución en las ventas de Total Bags, lo cual puede señalar un cambio en las preferencias o otros motivos.
+
+
 5. **Evaluación de Retención de Ventas por Cohorte:**
    - **Uso de Datos:** Usa las columnas `Total Volume` y `Date`.
    - **Esperado:** Estudia cómo se retienen las ventas en cohortes a lo largo de un año.
