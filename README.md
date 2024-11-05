@@ -221,13 +221,15 @@ Este enfoque compacto en dos sprints permite lograr el análisis completo y entr
 
    ![alt text](image-8.png)
 
-1. alteraciones en la elasticidad de la demanda por la variación del precio en algunas ciudades
-
-   ![alt text](image-10.png)
-
 1. La elasticidad tiende a 0 a medida que avanza el tiempo, mentras que en 2015 es de -250 en 2018 es de -50
 
    ![alt text](image-9.png)
+
+1. alteraciones en la elasticidad de la demanda por la variación del precio en algunas ciudades
+
+   ![alt text](image-10.png)
+   ![alt text](image-16.png)
+   ![alt text](image-22.png)
 
 1. Existe un consumo orientado a comprar mayor volumen a un precio más bajo, pero tambien hay un consumo de poco volumen a precios medios/altos
 1. hay tres clusters importantes de consumo: 
