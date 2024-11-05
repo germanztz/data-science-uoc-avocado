@@ -146,11 +146,16 @@ En cambio, 2018 muestra una variabilidad menor y menos outliers, sugiriendo que 
 
 ![image](https://github.com/user-attachments/assets/2feea2ca-c199-40cc-9203-1810f9a6bf52)
 
--El total bag y small bag tienen una correlación de 0.99, están relacionados por lo cual si uno tiende a subir o bajar, el otro tomará la misma reacción.
+-El gráfico muestra que el volumen total de ventas, Total Bags, está compuesto principalmente por Small Bags, lo que representa una correlación muy alta entre ambos, cercana a 0.99. Esto significa que cuando las ventas de Small Bags aumentan o disminuyen, el volumen de Total Bags sigue la misma tendencia, sugiriendo que las ventas de Small Bags son el principal contribuyente al volumen total.
 
+-El tipo de bolsa más vendido es la Small Bag, que representa un volumen considerablemente mayor comparado con las Large Bags y XLarge Bags. Esto podría indicar una preferencia del consumidor por tamaños más pequeños, quizás debido a la comodidad de transporte o al precio.
+
+-Las XLarge Bags muestran un volumen casi insignificante
 ![image](https://github.com/user-attachments/assets/002aed2a-47aa-449b-bfae-6218d366124e)
 
--
+-Durante todos los años, las Small Bags y el total (Total Bags) son consistentemente las más vendidas. Esto reafirma que las Small Bags contribuyen en gran medida al volumen total, siendo la opción preferida de los consumidores.
+
+-En 2016, se observa un incremento en el volumen de ventas en comparación con 2015, lo que podría indicar un aumento en la demanda de aguacates en ese año. Sin embargo, en 2018 hay una disminución en el volumen total, lo que sugiere un cambio en el mercado o en la oferta de producto.
 
 5. **Gráfico de Líneas de Precios Promedios por Año:**
    - **Uso de Datos:** Utiliza las columnas `AveragePrice` y `year`.
@@ -181,6 +186,20 @@ $$
      - Agrupa los datos por `region` y calcula la elasticidad para cada región utilizando `pd.pct_change()`.
      - Presenta un gráfico de barras que muestre la elasticidad por región usando `plt.bar()`.
 
+![image](https://github.com/user-attachments/assets/da1f24f7-3932-4ae2-93ba-ad0c38b24814)
+
+-La mayoría de las barras caen por debajo de cero, lo que indica una elasticidad precio-demanda negativa, es decir, un aumento en el precio generalmente resulta en una disminución en la demanda en esas regiones.
+
+-También se observa que las elasticidades varían tanto en magnitud como en dirección entre estos tipos. En algunas regiones locales, la demanda es más inelástica (menos sensible al precio) que en regiones más amplias. Esto puede indicar que en áreas locales específicas, los consumidores son menos sensibles a los cambios en el precio de los aguacates.
+
+-Algunas regiones, como "Albany" y "BaltimoreWashington", muestran elasticidades muy bajas, lo que sugiere que la demanda es más sensible a los cambios en el precio en estas áreas. Esto podría ser por la competencia o a la disponibilidad de aguacates en estas zonas.
+
+-Hay algunas barras que superan el cero, lo cual es inusual en elasticidad precio-demanda. Esto puede deberse a comportamientos específicos del mercado o a factores externos, como cambios estacionales o percepciones de calidad en algunas regiones.
+
+![image](https://github.com/user-attachments/assets/557a0b19-05e2-49fe-9ce4-fcf45a9e3671)
+
+-La siguiente imagen es similar, pero está agrupado por tipo de región y muestra las fechas.
+
 3. **Elasticidad a Nivel de Tipo de Bolsa:**
    - **Uso de Datos:** Usa las columnas `AveragePrice` y `Total Bags`.
    - **Esperado:** Calcula la elasticidad del precio de la demanda específica para cada tipo de bolsa.
@@ -192,6 +211,14 @@ $$
    - **Esperado:** Compara la elasticidad de la demanda entre aguacates orgánicos y convencionales.
      - Agrupa los datos por `type` y calcula la elasticidad utilizando `pd.pct_change()`.
      - Presenta un gráfico que muestre la diferencia en elasticidad entre los dos tipos usando `plt.bar()`.
+
+![image](https://github.com/user-attachments/assets/524c1806-c20d-442d-a5f3-31c1d494e57b)
+
+-Se observa que tanto los aguacates convencionales como los orgánicos tienen elasticidades negativas, lo que significa que, en general, un aumento en el precio lleva a una disminución en la demanda de ambos tipos.
+
+-Observamos que la barra de los aguacates convencionales es más baja (alrededor de -1.9), lo cual indica una mayor elasticidad, es decir, la demanda es más sensible a los cambios de precio en este tipo de aguacate. Esto significa que si el precio de los aguacates convencionales sube, la demanda tiende a disminuir considerablemente, ya que los consumidores pueden ser más sensibles al precio en este tipo.
+
+-La barra de los aguacates orgánicos está menos alejada de cero (aproximadamente -1.2), lo que indica que la demanda es menos sensible a los cambios de precio en comparación con los aguacates convencionales. Esto sugiere que los consumidores que compran aguacates orgánicos pueden estar menos influenciados por las variaciones de precio, probablemente debido a la percepción de calidad o el interés por productos orgánicos.
 
 5. **Análisis de la Elasticidad Precios-Ventas:**
    - **Uso de Datos:** Usa las columnas `AveragePrice` y `Total Volume`.
@@ -215,6 +242,15 @@ $$
      - Agrupa los datos por `region` y `Date` usando `groupby()`.
      - Calcula el promedio de precios y volumen para cada cohorte.
      - Presenta los resultados en gráficos de barras que muestren comparaciones entre regiones.
+
+![image](https://github.com/user-attachments/assets/995a7074-f802-48ee-ad46-a01f162db76e)
+
+-Este gráfico muestra que los precios tienden a ser más altos en las regiones locales, seguidos por las medias, y más bajos en las amplias. Además, hay patrones de estacionalidad en los precios, que son visibles en todas las regiones y podrían indicar que factores externos influyen en el precio del aguacate a lo largo del tiempo.
+
+-Entre mediados de 2016 y principios de 2017, se observa un aumento en los precios en todas las cohortes, lo que podría estar relacionado con factores externos como la demanda creciente o la escasez estacional del producto. Los precios parecen ser algo estacionales, con ciertos picos y caídas en períodos consistentes cada año.
+
+![image](https://github.com/user-attachments/assets/886cae77-01d1-48fa-a1c4-8b0782d52d0d)
+
 
 3. **Análisis de Cohortes en Función del Tipo de Bolsa:**
    - **Uso de Datos:** Usa las columnas `Total Bags`, `Small Bags`, `Large Bags`, `XLarge Bags` y `Date`.
