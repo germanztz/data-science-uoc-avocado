@@ -301,6 +301,18 @@ $$
      - Añade una línea de regresión utilizando `sns.regplot()` para ilustrar las tendencias.
      - Compara el ajuste de una regresión lineal frente a una polinómica.
 
+![image](https://github.com/user-attachments/assets/ac26e8a3-8c4c-4a55-90ca-1686b62c031f)
+
+-Existen algunos puntos dispersos hacia la parte superior del gráfico (volúmenes altos), que no son comunes en los datos y podrían representar ventas excepcionalmente altas a precios bajos o moderados.
+
+-Hay una falta de puntos en la parte derecha del gráfico para precios más altos (más de 2.5), lo cual sugiere que a precios más altos no se observan grandes volúmenes de venta.
+
+-Se nota una correlación negativa leve entre AveragePrice y Total Volume, ya que en general, los puntos tienden a disminuir en volumen a medida que el precio promedio aumenta. Esto puede indicar que, a medida que el precio sube, el volumen de ventas tiende a reducirse, lo cual es un comportamiento típico en productos sensibles al precio. Sin embargo, esta relación no es lineal ni fuerte.
+
+![image](https://github.com/user-attachments/assets/58c9a1ef-96c9-4ed4-ae20-779800adad90)
+
+-La línea de regresión lineal confirma la ligera correlación negativa observada, pero también resalta que esta relación es bastante débil, ya que la dispersión es alta y la línea tiene poca inclinación. Esto indica que el volumen de ventas puede estar influenciado por otros factores además del precio.
+
 3. **Predicciones Mensuales Usando Datos Trimestrales:**
    - **Uso de Datos:** Agrupa datos por trimestres y segmenta en meses utilizando `Date`, `AveragePrice`, y `Total Volume`.
    - **Esperado:** 
