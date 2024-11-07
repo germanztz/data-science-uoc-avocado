@@ -200,7 +200,7 @@ Esto podría sugerir que la demanda de aguacates aumenta en los meses de verano 
 - Si bien los precios en general muestran un comportamiento similar en todas las ciudades, algunas áreas exhiben tendencias más marcadas en ciertos momentos. Por ejemplo:
 Algunas ciudades, como California, que está más cerca de las principales áreas productoras de aguacates podrían tener precios más estables y bajos debido a la proximidad a la fuente. Y ciudades en el noreste o áreas más alejadas de las zonas productoras (como Nueva York o Boston) podrían experimentar mayores variaciones debido a los costos adicionales de transporte y logística.
 
--La estacionalidad en los precios podría estar reflejando patrones de consumo también. Si se sabe que la demanda de aguacates tiende a aumentar en ciertas estaciones (como verano y otoño debido a las ensaladas y recetas de temporada), entonces las fluctuaciones en el precio podrían ser una respuesta directa a esta demanda. Otras causas también son por el clima o eventos(como la Super Bowl).
+- La estacionalidad en los precios podría estar reflejando patrones de consumo también. Si se sabe que la demanda de aguacates tiende a aumentar en ciertas estaciones (como verano y otoño debido a las ensaladas y recetas de temporada), entonces las fluctuaciones en el precio podrían ser una respuesta directa a esta demanda. Otras causas también son por el clima o eventos(como la Super Bowl).
 
 ![image](https://github.com/user-attachments/assets/a6411127-4a1c-4dbb-81ad-9bf6210aeea1)
 
@@ -286,7 +286,6 @@ Algunas ciudades, como California, que está más cerca de las principales área
 ![image](https://github.com/user-attachments/assets/e01e58dc-7e33-42ea-bb54-e1ca783d028b)
 
 9. 
-
 - Existen algunos puntos dispersos hacia la parte superior del gráfico, volúmenes altos, que no son comunes en los datos y estos podrían representar ventas excepcionalmente altas a precios bajos o moderados.
 
 - Hay una falta de puntos en la parte derecha del gráfico para precios más altos (más de 2.5), significa que a precios más altos no se observan grandes volúmenes de venta.
@@ -296,7 +295,6 @@ Algunas ciudades, como California, que está más cerca de las principales área
 ![image](https://github.com/user-attachments/assets/ac26e8a3-8c4c-4a55-90ca-1686b62c031f)
 
 - La línea de regresión lineal confirma la ligera correlación negativa observada, pero también resalta que esta relación es bastante débil, ya que la dispersión es alta y la línea tiene poca inclinación. Significa que el volumen de ventas puede estar influenciado por otros factores además del precio.
-
 
 10. Existen datasets solapados que alteran los análisis, Separamos los datos por tipo de `region`
 
